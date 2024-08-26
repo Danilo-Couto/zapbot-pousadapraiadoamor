@@ -11,6 +11,12 @@ const waitALittle = 'Aguarde para ser atendido.';
 
 const optionsArray = new Array(0,1,2,3,4,5,6,7,8,9,10);
 
+function inactiveChatFunction(message, chatid) {
+    message.reply(PROPERTY.WANT_PRICES);
+    console.log('inativando chat')
+    inactiveChats.add(chatid);
+}
+
 const initializeClient = (clientName) => {
     const client = new Client({
         authStrategy: new LocalAuth({ clientId: clientName })
@@ -34,11 +40,11 @@ const initializeClient = (clientName) => {
         if(message.body.toLowerCase() === 'ativar') {
             console.log('ativando: ', chatid)
             inactiveChats.delete(chatid);
-        } else if (inactiveChats.has(chatid)) {
+        } 
+        if (inactiveChats.has(chatid)) {
             console.log('chat inativo: ',inactiveChats.has(chatid));
             return;
         }
-
         if (!optionsArray.includes(parseInt(message.body))) {
             console.log('NAO INCLUI OPCAO')
             await message.reply(MESSAGES.GREETINGS);
@@ -47,31 +53,25 @@ const initializeClient = (clientName) => {
         switch (message.body) {
             case '1':
                 await chat.sendMessage('Você escolheu a opção 1.\n\n' + MESSAGES.WANT_PRICES);
-                console.log('inativando chat')
+                console.log('inativando chat');
                 inactiveChats.add(chatid);
                 break;
             case '2':
                 await chat.sendMessage('Você escolheu a opção 2.\n\n' + PROPERTY.GENERAL + haveInterest);
                 if (message.body === '1') {
-                    message.reply(PROPERTY.WANT_PRICES);
-                    console.log('inativando chat')
-                    inactiveChats.add(chatid);
+                    inactiveChatFunction(message, chatid);
                 }
                 break;
             case '3':
                 await chat.sendMessage('Você escolheu a opção 3.\n\n' + PROPERTY.ADDRESS + haveInterest);
                 if (message.body === '1') {
-                    message.reply(PROPERTY.WANT_PRICES);
-                    console.log('inativando chat')
-                    inactiveChats.add(chatid);
+                    inactiveChatFunction(message, chatid);
                 }
                 break;
             case '4':
                 await chat.sendMessage('Você escolheu a opção 4.\n\n' + PROPERTY.ROOMS + haveInterest);
                 if (message.body === '1') {
-                    message.reply(PROPERTY.WANT_PRICES);
-                    console.log('inativando chat')
-                    inactiveChats.add(chatid);
+                    inactiveChatFunction(message, chatid);
                 } 
                 break;
             case '5':
