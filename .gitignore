@@ -21,9 +21,6 @@ build/
 # Optional eslint cache
 .eslintcache
 
-# Ignore test outputs
-whatsapp-bot.test.js
-
 # Ignore editor config files
 .vscode/
 .idea/
@@ -32,6 +29,7 @@ whatsapp-bot.test.js
 .DS_Store
 Thumbs.db
 
-# Ignore specific files
+# Ignore specific
 index copy.js
 whatsapp-bot.test.js
+.wwebjs_auth/
