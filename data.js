@@ -11,6 +11,7 @@ const menu =
 '10. Falar com o atendimento \n'+
 '11. Confirmar reserva';
 
+
 // Property details
 const PROPERTY = {
     GENERAL: 'Somos uma pousada rústica e perto de tudo.\n\n' +
