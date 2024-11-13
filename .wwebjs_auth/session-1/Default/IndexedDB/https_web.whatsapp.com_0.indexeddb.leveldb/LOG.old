@@ -1,0 +1,21 @@
+2024/11/13-10:53:52.239 833e Reusing MANIFEST /home/danilo/DEV/JAVASCRIPT/zapbot-pousadatoatoa/zapbot-pousadapraiadoamor/.wwebjs_auth/session-1/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/11/13-10:53:52.239 833e Recovering log #1941
+2024/11/13-10:53:52.244 833e Reusing old log /home/danilo/DEV/JAVASCRIPT/zapbot-pousadatoatoa/zapbot-pousadapraiadoamor/.wwebjs_auth/session-1/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/001941.log 
+2024/11/13-10:53:53.693 833b Level-0 table #1950: started
+2024/11/13-10:53:53.697 833b Level-0 table #1950: 148496 bytes OK
+2024/11/13-10:53:53.699 833b Delete type=0 #1941
+2024/11/13-10:53:53.699 833b Manual compaction at level-0 from ' V\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' W\x01\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/11/13-10:53:53.767 8376 Compacting 1@1 + 5@2 files
+2024/11/13-10:53:53.835 8376 Generated table #1951@1: 86352 keys, 2235384 bytes
+2024/11/13-10:53:53.876 8376 Generated table #1952@1: 68291 keys, 2231341 bytes
+2024/11/13-10:53:53.903 8376 Generated table #1953@1: 36344 keys, 2200273 bytes
+2024/11/13-10:53:53.922 8376 Generated table #1954@1: 20170 keys, 2178683 bytes
+2024/11/13-10:53:53.956 8376 Generated table #1955@1: 68448 keys, 2167006 bytes
+2024/11/13-10:53:53.956 8376 Compacted 1@1 + 5@2 files => 11012687 bytes
+2024/11/13-10:53:53.959 8376 compacted to: files[ 0 0 5 0 0 0 0 ]
+2024/11/13-10:53:53.959 8376 Delete type=2 #1945
+2024/11/13-10:53:53.959 8376 Delete type=2 #1947
+2024/11/13-10:53:53.959 8376 Delete type=2 #1946
+2024/11/13-10:53:53.959 8376 Delete type=2 #1950
+2024/11/13-10:53:53.959 8376 Delete type=2 #1944
+2024/11/13-10:53:53.959 8376 Delete type=2 #1943
